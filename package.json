@@ -1,0 +1,13 @@
+{
+   "scripts": {
+      "dev:frontend": "npm --prefix frontend run dev",
+      "dev:backend": "npm --prefix backend run dev",
+      "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+      "build": "next build",
+      "start": "next start",
+      "lint": "eslint"
+   },
+   "dependencies": {
+      "concurrently": "^9.2.1"
+   }
+}
